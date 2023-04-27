@@ -1,0 +1,64 @@
+\documentclass{ONEreport}
+
+\usepackage{fontspec}
+\setmainfont{Trebuchet MS} 
+
+\sceau{Images/PRO.one.be.png}
+%\pastille{Images/PRO.one.be.png}
+\addbibresource{biblio.bib}
+
+\begin{document}
+\include{_pagedegarde}
+
+%------ INTRO - INTRODUCTION ------
+\import{Chapitres}{0.intro}
+
+%------ ADMIN : USERS et COMPTES BANCAIRES ------
+\import{Chapitres}{1.admin}
+
+%------ CDV : CENTRES DE VACANCES ------
+\import{Chapitres}{2.cdv}
+
+%------ EDD : ECOLES DE DEVOIRS ------
+\import{Chapitres}{3.edd}
+
+%------ AES 1 : ACCUEIL EXTRASCOLAIRE ------
+\import{Chapitres}{4.aes}
+
+%------ PARTENARIAT AUTOMNE DÉTENTE ------
+\import{Chapitres}{5.pad}
+
+%------ Mon Equipe -----------------
+\import{Chapitres}{6.team}
+
+%------ CATL : Coordination ATL -------
+\import{Chapitres}{7.catl}
+
+%------ AES2 : ACCUEIL EXTRASCOLAIRE TYPE 2 -----
+%\chapter{Accueil Extrascolaire (type 2)}
+\import{Chapitres}{8.aes2}
+
+
+%%----- COVID : FORMULAIRE COVID -----
+%\input{8.covid}
+
+%%----- API REST  -----
+\import{Chapitres}{10.api_rest}
+
+%---- Annexes ----
+\begin{appendices}
+\import{Annexes}{A.import_aes1}
+\import{Annexes}{B.PADconvention}
+
+
+
+
+\end{appendices}
+%------ Bibliographie -----
+%\nocite{*}
+%\printbibliography[type=article,title=Articles]
+
+	\newpage
+	\thispagestyle{empty}
+    \strut
+\end{document}
